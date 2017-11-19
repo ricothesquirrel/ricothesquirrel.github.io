@@ -52,7 +52,7 @@ function sendTokenToServer(currentToken) {
     if (!isTokenSentToServer(currentToken)) {
         console.log('Отправка токена на сервер...');
 
-        var url = 'http://tour.belko.su/save_token.php'; // адрес скрипта на сервере который сохраняет ID устройства
+        var url = 'https://tour.belko.su/save_token.php'; // адрес скрипта на сервере который сохраняет ID устройства
         $.post(url, {
             token: currentToken
         });
